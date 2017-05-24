@@ -147,7 +147,7 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 	}
 	
 	public List<Integer> getId(Contact c){
-		List<Integer> ids = new ArrayList<>();;
+		List<Integer> ids = new ArrayList<>();
 	try {
 				String request = "SELECT * FROM carnetadresses.contact where nomcontact = (?) and prenomcontact = (?) and numero = (?)";
 				PreparedStatement preparedStatement = createConnection().prepareStatement(request);

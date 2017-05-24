@@ -23,7 +23,7 @@
 		 <script type="text/javascript">	 
 		  $(function() {
         	$('#action').click(function() {
-	          $.getJSON('http://localhost:9613/restex/rest/hello/contacts', function(data) {
+	          $.getJSON('http://localhost:8080/restex/rest/hello/contacts', function(data) {
 	        	  var val = JSON.stringify(data);
 	        	  /* var pos = val.indexOf("{");
 	        	  var position;
@@ -68,7 +68,7 @@
 	        				'content-type':"application/json"
 	        			},
 	        		
-	        		       "url" : 'http://localhost:9613/restex/rest/hello/creerContact/',
+	        		       "url" : 'http://localhost:8080/restex/rest/hello/creerContact/',
 	        		       "type" : 'POST', // Le type de la requête HTTP, ici devenu POST
 	        		       "data" : JSON.stringify(data), // On fait passer nos variables, exactement comme en GET, au script more_com.php
 	        		       "dataType" : 'json'
