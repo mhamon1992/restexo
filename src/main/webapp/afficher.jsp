@@ -67,7 +67,6 @@
 	        				"accept": "application/json",
 	        				'content-type':"application/json"
 	        			},
-	        		
 	        		       "url" : 'http://localhost:8080/restex/rest/hello/creerContact/',
 	        		       "type" : 'POST', // Le type de la requête HTTP, ici devenu POST
 	        		       "data" : JSON.stringify(data), // On fait passer nos variables, exactement comme en GET, au script more_com.php
