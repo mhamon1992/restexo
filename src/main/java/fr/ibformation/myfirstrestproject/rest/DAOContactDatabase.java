@@ -34,7 +34,6 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 
 	}
 
-	@Override
 	public void create(Contact c) {
 		// TODO Auto-generated method stub		
 		String request = "INSERT INTO carnetadresses.contact(nomcontact, prenomcontact, numero) values(?,?,?);";
@@ -51,7 +50,7 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 	
 	}
 
-	@Override
+	
 	public List<Contact> readByName(String name) {
 		List<Contact> contacts = null;
 		Contact contact = null;
@@ -75,7 +74,7 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 		
 	}
 
-	@Override
+	
 	public void update(Contact c) {
 		// TODO Auto-generated method stub
 		List<Integer> ids = getId(c);
@@ -95,7 +94,7 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 		
 	}
 
-	@Override
+	
 	public List<Contact> getAll() {
 		List<Contact> contacts = null;
 		try {
@@ -117,7 +116,7 @@ public class DAOContactDatabase implements DAOGeneric<Contact> {
 		return contacts;
 	}
 
-	@Override
+	
 	public void deleteByName(Contact c) {
 		// TODO Auto-generated method stub
 		List<Integer> ids = getId(c);
